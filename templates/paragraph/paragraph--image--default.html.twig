@@ -1,0 +1,27 @@
+{% set img_src = content.field_image.0['#item'].entity.uri.value %}
+{% set img_alt = content.field_image.0['#item'].alt %}
+{% set image_width = content.field_image.0['#item'].width %}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+		<h1 class="text-center">{{content.field_title.0}}</h1>
+		<div class="{{image_width <= 300 and image_width > 100 ? 'd-flex'}}">
+			{% if content.field_image.0 %}
+					<div class="img-info" style="width:{{image_width}}px">
+						<img src="{{img_src | image_style('wide') }}" alt="{{img_alt}}" />
+						<p class="caption-text">{{ content.field_detail.0}}</p>
+					</div>
+				{% endif %}
+			<div class="text-center mt-20 mr-20">{{content.field_body.0}}</div>
+		</div>
+    {% endblock %}
+{% endblock paragraph %}

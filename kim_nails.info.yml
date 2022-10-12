@@ -13,6 +13,7 @@ libraries:
   - kim_nails/smartmenus
   - kim_nails/flexslider
   - kim_nails/global-components
+  - kim_nails/google-font
 
 #Regions
 regions:

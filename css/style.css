@@ -1,0 +1,66 @@
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #87a2a5;
+}
+
+h2 {
+  font-size: 2.2rem;
+  line-height: 1.101;
+  margin-bottom: 1.101em;
+}
+
+h3 {
+  font-size: 1.7rem;
+  color: #8a8a8a;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+.brown-color {
+  color: #808080;
+}
+
+.paragraph--type--image {
+  border-top: 1px solid blue;
+  padding-top: 20px;
+}
+.paragraph--type--image img {
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 6px;
+  height: auto;
+  padding: 10px;
+}
+
+.caption-text {
+  color: #8a8a8a;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.img-info {
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}

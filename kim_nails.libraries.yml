@@ -18,7 +18,8 @@ global-components:
       css/base.css: {}
       css/custom-style.css: {}
       css/custom-media.css: {}
-  js:  
+      css/style.css: {}
+  js:
     js/jquery.smartmenus.min.js: {}
     js/custom.js: {}
   dependencies:
@@ -27,6 +28,12 @@ global-components:
     - core/drupal
     - core/drupalSettings
     - core/jquery.once
+# google font
+google-font:
+  css:
+    theme:
+      "//fonts.googleapis.com/css?family=Oswald":
+        { type: external, minified: true }
 
 # flexslider
 flexslider:
