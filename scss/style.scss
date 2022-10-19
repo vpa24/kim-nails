@@ -37,6 +37,12 @@ caption {
     text-transform: italic;
   }
 }
+.w-45 {
+  width: 45% !important;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
 .brown-color {
   color: #808080;
 }
@@ -65,4 +71,13 @@ caption {
 }
 .mt-20 {
   margin-top: 20px;
+}
+.price {
+  flex-flow: row wrap;
+  justify-content: center;
+  & table {
+    flex: 45%;
+    margin: 10px;
+    padding: 10px;
+  }
 }

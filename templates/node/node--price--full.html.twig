@@ -21,6 +21,10 @@
     <tbody>
       {{ content.field_price_with_full_set_and_fi }}
     </tbody>
+  {% elseif content.field_price_with_time['#items']|length %}
+    <tbody>
+      {{ content.field_price_with_time }}
+    </tbody>
   {% else %}
     <tbody>
       {{ content.field_price }}
