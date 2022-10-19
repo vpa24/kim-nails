@@ -2,7 +2,9 @@ bootstrap:
   version: 1.x
   css:
     theme:
-      includes/bootstrap/css/bootstrap.min.css: {}
+      "//cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css":
+        { type: external, minified: true }
+
   dependencies:
     - core/jquery
     - core/drupal.ajax

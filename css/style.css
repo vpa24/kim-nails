@@ -30,6 +30,20 @@ p {
   margin-bottom: 1.5em;
 }
 
+table {
+  caption-side: top;
+}
+
+caption {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  text-align: center;
+}
+caption h2 {
+  margin: 0px;
+  text-transform: italic;
+}
+
 .brown-color {
   color: #808080;
 }

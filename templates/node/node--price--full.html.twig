@@ -1,0 +1,29 @@
+{% set title_classes = ['table', 'table-hover', 'w-50'] %}
+{% set thead_attribute = create_attribute() %}
+<table {{ attributes.addClass(title_classes) }}>
+  <caption>
+    <h2>
+      {{ label }}
+    </h2>
+  </caption>
+  {% if content.field_price_with_full_set_and_fi['#items']|length %}
+    <thead {{ thead_attribute.addClass('table-light') }}>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">
+          Full Set
+        </th>
+        <th scope="col">
+          Fill-ins
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ content.field_price_with_full_set_and_fi }}
+    </tbody>
+  {% else %}
+    <tbody>
+      {{ content.field_price }}
+    </tbody>
+  {% endif %}
+</table>
