@@ -21,24 +21,11 @@ regions:
   search: "Search"
   primary_menu: "Primary menu"
 
-  topwidget_first: "Top First widget"
-  topwidget_second: "Top Second widget"
-  topwidget_third: "Top Third widget"
-
-  middle_first: "Middle first widget"
-  middle_second: "Middle second widget"
-  middle_third: "Middle third widget"
-
   highlighted: "Highlighted"
   breadcrumb: "Breadcrumb"
   content: "Content"
   sidebar_first: "Left sidebar"
   sidebar_second: "Right sidebar"
-
-  pricetable_first: "Price table first widget"
-  pricetable_second: "Price table second widget"
-  pricetable_third: "Price table third widget"
-  pricetable_forth: "Price table forth widget"
 
   bottom_first: "Bottom first widget"
   bottom_second: "Bottom second widget"

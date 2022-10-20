@@ -84,3 +84,16 @@ caption {
 .pink {
   color: #ff00ff;
 }
+.site-branding {
+  text-align: center;
+  margin: 1em 0;
+  .site-name {
+    font-family: "Pacifico", cursive;
+    line-height: 1.2em;
+    a {
+      font-size: 2.5em;
+      text-decoration: none;
+      color: #604a00;
+    }
+  }
+}
