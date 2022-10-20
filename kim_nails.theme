@@ -94,33 +94,6 @@ function kim_nails_preprocess_page(&$variables)
     $variables["bottom_class"] = "col-md-12";
   }
 
-  // Add responsive class for price widget.
-  if (
-    !empty($variables["page"]["pricetable_first"]) &&
-    !empty($variables["page"]["pricetable_second"]) &&
-    !empty($variables["page"]["pricetable_third"]) &&
-    !empty($variables["page"]["pricetable_forth"])
-  ) {
-    $variables["pricetable_class"] = "col-sm-3";
-  } elseif (
-    !empty($variables["page"]["pricetable_first"]) &&
-    !empty($variables["page"]["pricetable_second"]) &&
-    !empty($variables["page"]["pricetable_third"])
-  ) {
-    $variables["pricetable_class"] = "col-sm-4";
-  } elseif (
-    !empty($variables["page"]["pricetable_first"]) &&
-      !empty($variables["page"]["pricetable_second"]) or
-    !empty($variables["page"]["pricetable_first"]) &&
-      !empty($variables["page"]["pricetable_third"]) or
-    !empty($variables["page"]["pricetable_third"]) &&
-      !empty($variables["page"]["pricetable_second"])
-  ) {
-    $variables["pricetable_class"] = "col-sm-6";
-  } else {
-    $variables["pricetable_class"] = "col-md-12";
-  }
-
   // Add Responsive class for footer.
   if (
     !empty($variables["page"]["footer_first"]) &&

@@ -24,8 +24,6 @@ regions:
   highlighted: "Highlighted"
   breadcrumb: "Breadcrumb"
   content: "Content"
-  sidebar_first: "Left sidebar"
-  sidebar_second: "Right sidebar"
 
   bottom_first: "Bottom first widget"
   bottom_second: "Bottom second widget"
