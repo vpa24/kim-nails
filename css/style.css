@@ -115,7 +115,8 @@ caption h2 {
   color: #604a00;
 }
 
-.img-caption img {
+.img-caption img,
+.service-info img {
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 6px;
   height: auto;
   max-width: 98%;
@@ -127,4 +128,14 @@ figure img + figcaption em {
   font-size: 14px;
   color: #8a8a8a;
   margin: 0.75em 0 0;
+}
+
+.service {
+  clear: both;
+  padding: 10px 0;
+}
+
+.img-service {
+  float: left;
+  margin-right: 20px;
 }

@@ -1,0 +1,7 @@
+{% if (content.field_service_type|length) > 1 %}
+  {% for item in content.field_service_type['#items'] %}
+    <div {{ attributes.addClass('service') }}>
+      {{ drupal_entity('paragraph', item.target_id) }}
+    </div>
+  {% endfor %}
+{% endif %}

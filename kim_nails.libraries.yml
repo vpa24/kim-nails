@@ -13,7 +13,7 @@ bootstrap:
     - core/jquery.once
 
 global-components:
-  Version: 1.x
+  version: 1.x
   css:
     theme:
       css/sm-core-css.css: {}

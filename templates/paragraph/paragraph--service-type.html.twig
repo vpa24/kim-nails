@@ -1,0 +1,11 @@
+{% set img_attributes = create_attribute() %}
+
+<h2>
+  {{ content.field_service_title[0] }}
+</h2>
+<div {{ attributes.addClass('service-info') }}>
+  <div {{ img_attributes.addClass('img-service') }}>
+    {{ content.field_service_image[0] }}
+  </div>
+  {{ content.field_service_body[0] }}
+</div>
