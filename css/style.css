@@ -188,3 +188,10 @@ figcaption em {
 .post.views-row .header:first-child {
   margin-top: 2em;
 }
+
+#block-pagetitle {
+  margin-top: 2em;
+}
+#block-pagetitle span {
+  color: #fb5a02;
+}
