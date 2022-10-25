@@ -200,7 +200,8 @@ figure.align-left {
 #block-pagetitle {
   margin-top: 2em;
 }
-#block-pagetitle span {
+#block-pagetitle span,
+#block-pagetitle h2 {
   color: #fb5a02;
 }
 

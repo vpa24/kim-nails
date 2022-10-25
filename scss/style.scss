@@ -140,7 +140,7 @@ figcaption {
     color: #fb5a02;
   }
 }
-figure{
+figure {
   &.align-left {
     margin-right: 20px;
   }
@@ -182,7 +182,8 @@ figure{
 }
 #block-pagetitle {
   margin-top: 2em;
-  span {
+  span,
+  h2 {
     color: #fb5a02;
   }
 }
