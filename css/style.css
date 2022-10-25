@@ -117,13 +117,17 @@ caption h2 {
 
 .img-caption img,
 .content-img img,
-.service-info img {
+.service-info img,
+.node--type-article img {
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 6px;
   height: auto;
   max-width: 98%;
   padding: 10px;
 }
 
+figcaption {
+  text-align: center;
+}
 figcaption em {
   font-style: italic;
   font-size: 14px;
@@ -152,6 +156,10 @@ figcaption em {
 }
 .field--name-field-tags .field__item {
   color: #fb5a02;
+}
+
+figure.align-left {
+  margin-right: 20px;
 }
 
 .algin-left img {
@@ -194,4 +202,12 @@ figcaption em {
 }
 #block-pagetitle span {
   color: #fb5a02;
+}
+
+.node-6 {
+  font-size: 20px;
+}
+.node-6 .algin-none {
+  padding: 0;
+  margin: 0;
 }

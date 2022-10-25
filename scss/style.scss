@@ -99,7 +99,8 @@ caption {
 }
 .img-caption,
 .content-img,
-.service-info {
+.service-info,
+.node--type-article {
   img {
     box-shadow: rgba(0, 0, 0, 0.1) 0 0 6px;
     height: auto;
@@ -107,11 +108,14 @@ caption {
     padding: 10px;
   }
 }
-figcaption em {
-  font-style: italic;
-  font-size: 14px;
-  color: #8a8a8a;
-  margin: 0.75em 0 0;
+figcaption {
+  text-align: center;
+  em {
+    font-style: italic;
+    font-size: 14px;
+    color: #8a8a8a;
+    margin: 0.75em 0 0;
+  }
 }
 .service {
   clear: both;
@@ -134,6 +138,11 @@ figcaption em {
   justify-content: center;
   .field__item {
     color: #fb5a02;
+  }
+}
+figure{
+  &.align-left {
+    margin-right: 20px;
   }
 }
 .algin-left {
@@ -175,5 +184,12 @@ figcaption em {
   margin-top: 2em;
   span {
     color: #fb5a02;
+  }
+}
+.node-6 {
+  font-size: 20px;
+  .algin-none {
+    padding: 0;
+    margin: 0;
   }
 }
