@@ -107,7 +107,7 @@ caption {
     padding: 10px;
   }
 }
-figure img + figcaption em {
+figcaption em {
   font-style: italic;
   font-size: 14px;
   color: #8a8a8a;
@@ -131,7 +131,43 @@ figure img + figcaption em {
 .field--name-field-tags {
   font-size: 1.1em;
   padding-bottom: 20px;
+  justify-content: center;
   .field__item {
     color: #fb5a02;
+  }
+}
+.algin-left {
+  img {
+    float: left;
+    margin-right: 20px;
+  }
+}
+.algin-none {
+  clear: both;
+  padding-top: 20px;
+}
+.align-center {
+  text-align: center;
+}
+.post {
+  &.views-row {
+    background: url("../images/ornament.png") no-repeat 50% bottom;
+    background-size: auto;
+    background-size: auto;
+    background-size: 154px;
+    margin: 0 0 3.25em;
+    padding: 0 0 4.35em 0;
+    h2 {
+      margin-bottom: 0.3em;
+      a {
+        text-decoration: none;
+      }
+    }
+    .header {
+      &:first-child {
+        margin-top: 2em;
+      }
+      margin-bottom: 2em;
+    }
   }
 }

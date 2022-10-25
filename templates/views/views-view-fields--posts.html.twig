@@ -1,0 +1,22 @@
+<div {{
+  create_attribute({
+    class: ['text-center', 'header']
+  })
+  }}>
+  <h2>
+    {{ fields.title.content }}
+  </h2>
+  <h6>
+    {{ fields.created.content }}
+  </h6>
+</div>
+<div {{ attributes.addClass('content-img') }}>
+  {{ fields.body.content }}
+  <h6 {{
+    create_attribute({
+      class: ['text-center']
+    })
+    }}>
+    Posted in {{ fields.field_tags.content }}
+  </h6>
+</div>

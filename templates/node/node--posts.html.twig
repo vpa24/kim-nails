@@ -1,16 +1,4 @@
-<h2 {{ title_attributes.addClass('text-center') }}>
-  {{ label }}
-</h2>
 <div {{ attributes.addClass('content-img') }}>
   {{ content.body }}
-  {# {% set tid = node.field_tags.target_id %}
-  {% for item in content.field_tags %}
-    {# {{ item.tid }} #}
-
-  {# {{ drupal_entity('taxonomy', item.target_id) }} #}
-
-  {# {{ kint(item) }} #}
   {{ content.field_tags }}
-  {# {% endfor %} #}
-  {# {{ kint(content.field_tags) }} #}
 </div>
