@@ -98,6 +98,7 @@ caption {
   }
 }
 .img-caption,
+.content-img,
 .service-info {
   img {
     box-shadow: rgba(0, 0, 0, 0.1) 0 0 6px;
@@ -119,4 +120,18 @@ figure img + figcaption em {
 .img-service {
   float: left;
   margin-right: 20px;
+}
+.content-img {
+  .d-flex {
+    figure {
+      flex: 0 0 33.333333%;
+    }
+  }
+}
+.field--name-field-tags {
+  font-size: 1.1em;
+  padding-bottom: 20px;
+  .field__item {
+    color: #fb5a02;
+  }
 }

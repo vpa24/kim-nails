@@ -1,0 +1,24 @@
+{% set classes = [
+  'field--name-' ~ (field_name|clean_class),
+  'field--label-' ~ label_display,
+  label_display == 'inline' ? 'clearfix',
+  'd-flex'
+] %}
+{% set title_classes = [
+  'field__label',
+  label_display == 'visually_hidden' ? 'visually-hidden'
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  {{ label }} {{ '&nbsp;' }}
+
+  {% for item in items %}
+    <div {{ item.attributes.addClass('field__item') }}>
+      {% if not loop.last %}
+        {{ item.content }}{{ ',&nbsp;' }}
+      {% else %}
+        {{ item.content }}
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
