@@ -14,11 +14,9 @@
  * @ingroup themeable
  */
 #}
-{% set title_classes = ['text-center'] %}
-
 {{ title_prefix }}
 {% if title %}
-  <h2 {{ title_attributes.addClass(title_classes) }}>
+  <h2>
     {{ title }}
   </h2>
 {% endif %}

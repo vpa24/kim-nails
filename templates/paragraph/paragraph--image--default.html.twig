@@ -18,7 +18,7 @@
 			{% if content.field_image.0 %}
 					<div class="img-info" style="width:{{image_width}}px">
 						<img src="{{img_src | image_style('wide') }}" alt="{{img_alt}}" />
-						<p class="caption-text">{{ content.field_detail.0}}</p>
+						<figcaption><em>{{ content.field_detail.0}}</em></figcaption>
 					</div>
 				{% endif %}
 			<div class="text-center mt-20 mr-20">{{content.field_body.0}}</div>

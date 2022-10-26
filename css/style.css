@@ -1,6 +1,7 @@
 body {
   font-size: 16px;
   line-height: 1.5;
+  background-color: #ffe0e0 !important;
 }
 
 h1,
@@ -200,6 +201,15 @@ figure.align-left {
 #block-pagetitle {
   margin-top: 2em;
 }
+#block-pagetitle:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #fb5a02;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+}
 #block-pagetitle span,
 #block-pagetitle h2 {
   color: #fb5a02;
@@ -211,4 +221,29 @@ figure.align-left {
 .node-6 .algin-none {
   padding: 0;
   margin: 0;
+}
+
+.copyright {
+  background: #272727;
+  color: #d9d9d9;
+}
+
+#pageBorder {
+  border: 10px solid #997a7a;
+  width: 1350px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.footer {
+  max-width: 1306px;
+}
+.footer .col-6 {
+  background: #272727;
+}
+.footer .col-6.copyright {
+  padding-left: 20px;
+}
+.footer .social-media {
+  padding-right: 20px;
 }

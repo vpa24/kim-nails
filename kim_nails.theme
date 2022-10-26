@@ -139,7 +139,6 @@ function kim_nails_preprocess_page(&$variables)
   $variables["twitter_url"] = theme_get_setting("twitter_url");
   $variables["linkedin_url"] = theme_get_setting("linkedin_url");
   $variables["pinterest_url"] = theme_get_setting("pinterest_url");
-  $variables["rss_url"] = theme_get_setting("rss_url");
   $variables["copyright_text"] = theme_get_setting("copyright_text");
   $variables["show_credit_link"] = theme_get_setting("show_credit_link");
 
@@ -253,11 +252,6 @@ function kim_nails_form_system_theme_settings_alter(
     "#title" => t("Pinterest Link"),
     "#default_value" => theme_get_setting("pinterest_url"),
   ];
-  $form["kim_nails_settings"]["social_icon"]["rss_url"] = [
-    "#type" => "textfield",
-    "#title" => t("RSS Link"),
-    "#default_value" => theme_get_setting("rss_url"),
-  ];
 
   // Custom submit to save the file permanent.
   $form["#submit"][] = "kim_nails_settings_form_submit";
@@ -273,20 +267,6 @@ function kim_nails_form_system_theme_settings_alter(
     "#type" => "textfield",
     "#title" => t("Enter copyright text"),
     "#default_value" => theme_get_setting("copyright_text"),
-  ];
-
-  //Show/Hide credit
-  $form["kim_nails_settings"]["credit_link"] = [
-    "#type" => "details",
-    "#title" => t("Credit"),
-    "#collapsible" => true,
-    "#collapsed" => false,
-  ];
-  $form["kim_nails_settings"]["credit_link"]["show_credit_link"] = [
-    "#type" => "checkbox",
-    "#title" => t("Show/hide credit text"),
-    "#default_value" => theme_get_setting("show_credit_link"),
-    "#description" => t("Recommend you to display credit in footer"),
   ];
 
   //Slide show configure
