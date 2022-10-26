@@ -1,17 +1,3 @@
-bootstrap:
-  version: 1.x
-  css:
-    theme:
-      "//cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css":
-        { type: external, minified: true }
-
-  dependencies:
-    - core/jquery
-    - core/drupal.ajax
-    - core/drupal
-    - core/drupalSettings
-    - core/jquery.once
-
 global-components:
   version: 1.x
   css:
