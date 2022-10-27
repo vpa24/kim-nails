@@ -191,15 +191,6 @@ figure {
 }
 #block-pagetitle {
   margin-top: 2em;
-  &:after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid #fb5a02;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 70px;
-  }
   span,
   h2 {
     color: #fb5a02;
