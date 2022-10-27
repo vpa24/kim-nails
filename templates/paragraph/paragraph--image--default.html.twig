@@ -16,8 +16,8 @@
 		<h1 class="text-center">{{content.field_title.0}}</h1>
 		<div class="{{image_width <= 300 and image_width > 100 ? 'd-flex'}}">
 			{% if content.field_image.0 %}
-					<div class="img-info" style="width:{{image_width}}px">
-						<img src="{{img_src | image_style('wide') }}" alt="{{img_alt}}" />
+					<div class="img-info" style="width:{{image_width <= 300 and image_width > 100 ? image_width ~ 'px' : '100%'}}">
+						<img src="{{img_src | image_style('wide') }}" alt="{{img_alt}}" class="{{image_width > 500 ? 'img-fluid'}}" />
 						<figcaption><em>{{ content.field_detail.0}}</em></figcaption>
 					</div>
 				{% endif %}
