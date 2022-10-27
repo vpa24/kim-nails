@@ -1,15 +1,3 @@
-bootstrap:
-  version: 1.x
-  css:
-    theme:
-      includes/bootstrap/css/bootstrap.min.css: {}
-  dependencies:
-    - core/jquery
-    - core/drupal.ajax
-    - core/drupal
-    - core/drupalSettings
-    - core/jquery.once
-
 global-components:
   version: 1.x
   css:
