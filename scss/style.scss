@@ -244,15 +244,22 @@ figure {
   }
 }
 
+@include media-breakpoint-up(xl){
+  .w-88{
+    width: 1100px;
+  }
+}
+@include media-breakpoint-up(xxl) {
+  .w-88 {
+    width: 1300px;
+  }
+}
 @include media-breakpoint-up(md) {
   .navbar-toggle {
     display: none;
   }
   .region-header {
     width: 100%;
-  }
-  .w-88 {
-    width: 95%;
   }
 }
 @include media-breakpoint-down(md) {
@@ -287,5 +294,18 @@ figure {
   }
   .navbar-toggle {
     top: 30%;
+  }
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 }
