@@ -1,0 +1,7 @@
+{% if multiple %}
+  {% for item in items %}
+    <div class="col-md-6 col-sm-6 col-lg-3 text-center pb-3">
+      {{ item.content }}
+    </div>
+  {% endfor %}
+{% endif %}
