@@ -192,9 +192,13 @@ function kim_nails_get_slider_content()
   for ($i = 1; $i <= theme_get_setting("no_of_slides"); $i++) {
     $fid = theme_get_setting("slide_image_path" . $i, "kim_nails");
     if (!empty($fid)) {
+      $style = \Drupal::entityTypeManager()
+        ->getStorage("image_style")
+        ->load("slider");
       $file = File::load($fid[0]);
       $uri = $file->getFileUri();
-      $path = file_create_url($uri);
+      $render_uri = $style->buildUrl($uri);
+      $path = file_create_url($render_uri);
     } else {
       $path =
         base_path() .
