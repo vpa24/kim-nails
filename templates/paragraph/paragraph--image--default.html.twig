@@ -17,7 +17,7 @@
 		<div class="{{image_width <= 300 and image_width > 100 ? 'd-flex'}}">
 			{% if content.field_image.0 %}
 					<div class="img-info" style="width:{{image_width <= 300 and image_width > 100 ? image_width ~ 'px' : '100%'}}">
-						<img src="{{img_src | image_style('wide') }}" alt="{{img_alt}}" class="{{image_width > 500 ? 'img-fluid'}}" />
+						<img src="{{img_src | image_style('wide') }}" alt="{{img_alt}}" class="{{image_width > 500 ? 'img-fluid'}}" loading="lazy" />
 						<figcaption><em>{{ content.field_detail.0}}</em></figcaption>
 					</div>
 				{% endif %}
