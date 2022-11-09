@@ -5,6 +5,7 @@ package: core
 base theme: false
 core: 8.x
 core_version_requirement: ^8 || ^9
+logo: kims_nails_sign.webp
 
 #Libraries
 libraries:
