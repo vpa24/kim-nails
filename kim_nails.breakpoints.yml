@@ -1,25 +1,32 @@
-kim_nails.screen-sm-min:
-  label: screen-sm-min
-  mediaQuery: "all and (min -width: 576px)"
+kim_nails.screen-xsm:
+  label: screen-X-Small
+  mediaQuery: "all and (max-width: 575.98px)"
   weight: 0
   multipliers:
     - 1x
-kim_nails.screen-md-min:
-  label: screen-md-max
-  mediaQuery: "all and (min-width: 768px)"
+kim_nails.screen-sm:
+  label: screen-Small
+  mediaQuery: "(min-width: 576px) and (max-width: 767.98px)"
   weight: 1
   multipliers:
     - 1x
-kim_nails.screen-lg-min:
-  label: screen-lg-min
-  mediaQuery: "all and (min-width: 992px)"
+kim_nails.screen-md:
+  label: screen-Medium
+  mediaQuery: "(min-width: 768px) and (max-width: 991.98px)"
   weight: 2
   multipliers:
     - 1x
 
-kim_nails.screen-xl-min:
-  label: screen-xl-min
-  mediaQuery: "all and (min-width: 1200px)"
+kim_nails.screen-lg:
+  label: screen-Large
+  mediaQuery: "(min-width: 992px) and (max-width: 1198.98px)"
   weight: 3
+  multipliers:
+    - 1x
+
+kim_nails.screen-xl:
+  label: screen-Extra-large
+  mediaQuery: "all and (min-width: 1200px)"
+  weight: 4
   multipliers:
     - 1x
