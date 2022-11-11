@@ -100,7 +100,16 @@
       <div class="flexslider">
         <ul class="slides">
           {% for slider_contents in slider_content %}
-            {{ slider_contents|raw }}
+            {% set responsiveBannerStyle = {
+              '#theme': 'responsive_image',
+              '#responsive_image_style_id': 'kim_nails',
+              '#uri': slider_contents,
+              '#alt': 'Slider Nail Banner',
+              '#attributes': {
+                class: 'img-responsive'
+              }
+            } %}
+            <li>{{ responsiveBannerStyle }}</li>
           {% endfor %}
         </ul>
       </div>
