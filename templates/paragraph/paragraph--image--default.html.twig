@@ -1,6 +1,6 @@
 {% set img_src = content.field_image.0['#item'].entity.uri.value %}
 {% set img_alt = content.field_image.0['#item'].alt %}
-{% set image_width = content.field_image.0['#item'].width %}
+{% set img_width = content.field_image.0['#item'].width %}
 {%
   set classes = [
     'paragraph',
@@ -9,15 +9,22 @@
     not paragraph.isPublished() ? 'paragraph--unpublished',
   ]
 %}
-
+{% 
+    set ResponsiveImageStyle ={
+        '#theme': 'responsive_image',
+        '#responsive_image_style_id': 'kim_nails',
+        '#uri': img_src,
+        '#attributes': { class: img_width >500 ? 'img-fluid', alt: img_alt },
+    } 
+%}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 		<h1 class="text-center">{{content.field_title.0}}</h1>
-		<div class="{{image_width <= 300 and image_width > 100 ? 'd-flex'}}">
+		<div class="{{img_width <= 300 and img_width > 100 ? 'd-flex'}}">
 			{% if content.field_image.0 %}
-					<div class="img-info" style="width:{{image_width <= 300 and image_width > 100 ? image_width ~ 'px' : '100%'}}">
-						<img src="{{img_src | image_style('wide') }}" alt="{{img_alt}}" class="{{image_width > 500 ? 'img-fluid'}}" />
+					<div class="img-info" style="width:{{img_width <= 300 and img_width > 100 ? img_width ~ 'px' : '100%'}}">
+						{{ResponsiveImageStyle}}
 						<figcaption><em>{{ content.field_detail.0}}</em></figcaption>
 					</div>
 				{% endif %}

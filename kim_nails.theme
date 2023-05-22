@@ -137,8 +137,6 @@ function kim_nails_preprocess_page(&$variables)
   $variables["show_social_icon"] = theme_get_setting("show_social_icon");
   $variables["facebook_url"] = theme_get_setting("facebook_url");
   $variables["twitter_url"] = theme_get_setting("twitter_url");
-  $variables["linkedin_url"] = theme_get_setting("linkedin_url");
-  $variables["pinterest_url"] = theme_get_setting("pinterest_url");
   $variables["copyright_text"] = theme_get_setting("copyright_text");
   $variables["show_credit_link"] = theme_get_setting("show_credit_link");
 
@@ -194,20 +192,13 @@ function kim_nails_get_slider_content()
     if (!empty($fid)) {
       $file = File::load($fid[0]);
       $uri = $file->getFileUri();
-      $path = file_create_url($uri);
     } else {
       $path =
         base_path() .
         drupal_get_path("theme", "kim_nails") .
         theme_get_setting("slide_image_path_" . $i, "kim_nails");
     }
-
-    $slider_content[$i] =
-      '<li>
-      <img src="' .
-      $path .
-      '" alt="Slider Banner" />
-    </li>';
+    $slider_content[] = $uri;
   }
   return $slider_content;
 }
@@ -241,16 +232,6 @@ function kim_nails_form_system_theme_settings_alter(
     "#type" => "textfield",
     "#title" => t("Twitter Link"),
     "#default_value" => theme_get_setting("twitter_url"),
-  ];
-  $form["kim_nails_settings"]["social_icon"]["linkedin_url"] = [
-    "#type" => "textfield",
-    "#title" => t("Linkedin Link"),
-    "#default_value" => theme_get_setting("linkedin_url"),
-  ];
-  $form["kim_nails_settings"]["social_icon"]["pinterest_url"] = [
-    "#type" => "textfield",
-    "#title" => t("Pinterest Link"),
-    "#default_value" => theme_get_setting("pinterest_url"),
   ];
 
   // Custom submit to save the file permanent.
