@@ -212,6 +212,10 @@ figure {
   margin: 0 auto;
   background: #fff;
 }
+.social-media {
+  padding-right: 20px;
+  color: #d9d9d9;
+}
 .footer {
   max-width: 1306px;
   .col-6 {
@@ -254,6 +258,27 @@ figure {
     width: 1300px;
   }
 }
+
+  .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-right: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    top: 25%;
+    margin: 0 auto;
+    .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      & + .icon-bar {
+        margin-top: 4px;
+      }
+    }
+  }
+}
 @include media-breakpoint-up(md) {
   .navbar-toggle {
     display: none;
@@ -262,6 +287,17 @@ figure {
     width: 100%;
   }
 }
+@include media-breakpoint-up(xl) {
+  .w-88 {
+    width: 1100px;
+  }
+}
+@include media-breakpoint-up(xxl) {
+  .w-88 {
+    width: 1300px;
+  }
+}
+
 @include media-breakpoint-down(md) {
   .region-header {
     width: 85%;
